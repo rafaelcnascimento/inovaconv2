@@ -1,0 +1,10 @@
+/*Modifica a altura do carrossel inical*/
+.altura-vitrine{
+    height: 600px;
+}
+
+.rodape{
+    margin-top: 50px;
+    background:#04091e;
+    padding-bottom: 40px;
+}
