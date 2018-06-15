@@ -38,23 +38,20 @@
 			  <header id="header" id="home">
 			    <div class="container main-menu">
 			    	<div class="row align-items-center justify-content-between d-flex">
-				      <div id="logo">
+				      <div id="logo" style="margin-left: -60px;">
 				        <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="index.html">Home</a></li>
+				          <li><a href="#ultimas-noticias">Início</a></li>
 				          <li><a href="about.html">Quem Somos</a></li>
+                          <li><a href="#servicos">Serviços</a></li>
+                          <li><a target="_blank" href="cursos.php">Cursos</a></li>
+                          <li><a target="_blank" href="cursos.php">Notícias</a></li>
 				          <li><a href="services.html">Parceiros</a></li>
-				          <li class="menu-has-children"><a href="">Ações sociais</a>
-				            <ul>
-				              <li><a href="blog-home.html">SOS Missoes</a></li>
-				              <li><a href="blog-single.html">Sei la</a></li>
-				            </ul>
-				          </li>						          
-			              <li><a href="elements.html">Contato</a></li>				          
-				          <li><a href="contact.html">Vagas</a></li>
-				          <li><a href="contact.html">Área Empresas</a></li>
+				          <li><a target="_blank" href="acoes-sociais.php">Ações sociais</a></li>						          
+			              <li><a href="#contato">Contato</a></li>				          
+				          <li><a target="_blank" href="http://cnecsan.cnec.br/servicos-a-comunidade/">Portal do Trabalho</a></li>
 				        </ul>
 				      </nav><!-- #nav-menu-container -->		    		
 			    	</div>
@@ -62,7 +59,8 @@
 			  </header><!-- #header -->
 
 			<!--Banner Area--> 
-			<section class="carousel-vitrine" id="vitrine">
+
+			<section class="carousel-vitrine" id="ultimas-noticias">
 					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 					  <ol class="carousel-indicators">
 					    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -120,12 +118,27 @@
 			</section>
 			<!-- End service Area -->
 			
+            <!-- Carrossel com os parceiros -->
+            <section class="service-area section-gap" id="servicos" style="margin-bottom: 10px;">
+                            <div class="container" style="margin-top: -10%;">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-12 pb-50 header-text text-center">
+                                        <h1 class="mb-10">Serviços Prestados</h1>
+                                    </div>
+                                    <div class="whatever">
+                                       <h3>Fazemos algo</h3>
+                                    </div>
+                                </div>                      
+            </section>
+            <!-- End home-about Area -->
+
+
 			<!-- Carrossel com os parceiros -->
 			<section class="service-area section-gap" id="parceiros" style="margin-bottom: -220px;">
 							<div class="container" style="margin-top: -10%;">
 								<div class="row justify-content-center">
 									<div class="col-md-12 pb-50 header-text text-center">
-										<h1 class="mb-10">Nosso Parceiros</h1>
+										<h1 class="mb-10">Nossos Parceiros</h1>
 									</div>
 									<div class="whatever">
 										<img src="img/parceiros/cnec.png">
@@ -134,53 +147,49 @@
 						</section>
 			<!-- End home-about Area -->
 
-			<!-- colar no contato
-			<section class="discount-section-area relative section-gap">
-				<div class="overlay overlay-bg"></div>
-				<div class="container">
-					<div class="row align-items-center justify-content-between no-gutters">
-						<div class="col-lg-6 discount-left">
-							<h1 class="text-white">Enjoy 25% Seasonal Discount!</h1>
-							<p class="text-white">
-								inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial.
-							</p>
-							<a href="#" class="header-btn">Order Service Now</a>
-						</div>
-						<div class="col-lg-5 discount-right">
-							<h4 class="text-white">Get a free Estimate</h4>
-		                    <form class="booking-form" id="myForm" action="#">
-		                        <div class="row">
-		                            <div class="col-lg-12 d-flex flex-column">
-		                                <input name="name" placeholder="Your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Name'" class="form-control mt-20" required="" type="text">
-		                            </div>
-		                            <div class="col-lg-6 d-flex flex-column">
-		                                <input name="phone" placeholder="Phone" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone'" class="form-control mt-20" required="" type="text">
-		                            </div>
-		                            <div class="col-lg-6 d-flex flex-column">
-		                                <input name="email" placeholder="Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'" class="form-control mt-20" required="" type="email">
-		                            </div>
-		                            <div class="col-lg-12 flex-column">
-		                                <textarea rows="5" class="form-control mt-20" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
-		                            </div>
+			<!-- Contato-->
+			<section class="work-process-area pt-120" id="contato">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="menu-content pb-60 col-lg-7">
+                            <div class="title text-center">
+                                <h1 class="mb-10">Entre em Contato Conosco</h1>
+                                <form class="booking-form" id="myForm" action="#">
+                                    <div class="row">
+                                        <div class="col-lg-6 d-flex flex-column">
+                                            <input name="nome" placeholder="Seu nome" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Seu nome'" class="form-control mt-20" required="" type="text">
+                                        </div>
+                                        <div class="col-lg-6 d-flex flex-column">
+                                            <input name="nome_empresa" placeholder="Empresa" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Empresa'" class="form-control mt-20" required="" type="text">
+                                        </div>
+                                        <div class="col-lg-6 d-flex flex-column">
+                                            <input name="telefone" placeholder="Telefone" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Telefone'" class="form-control mt-20" required="" type="text">
+                                        </div>
+                                        <div class="col-lg-6 d-flex flex-column">
+                                            <input name="email" placeholder="Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'" class="form-control mt-20" required="" type="email">
+                                        </div>
+                                        <div class="col-lg-12 flex-column">
+                                            <textarea rows="5" class="form-control mt-20" name="mensagem" placeholder="Mensagem" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mensagem'" required=""></textarea>
+                                        </div>
+                                        <div class="col-lg-12 d-flex justify-content-center send-btn">
+                                            <button class="genric-btn primary mt-20 text-uppercase">Enviar</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </section>
+            <!-- Contato ends aqui -->
 
-		                            <div class="col-lg-12 d-flex justify-content-end send-btn">
-		                                <button class="genric-btn primary mt-20 text-uppercase ">Get Estimate</button>
-		                            </div>
-		                        </div>
-		                    </form>
-						</div>
-					</div>
-				</div>	
-			</section>
-			-->
-			
 			<!-- Start work-process Area -->
-			<section class="work-process-area pt-120" id="onde-estamos">
+			<section class="work-process-area pt-120" id="onde-estamos" style="margin-top: -70px;">
 				<div class="container">
 					<div class="row d-flex justify-content-center">
 						<div class="menu-content pb-60 col-lg-7">
 							<div class="title text-center">
-								<h1 class="mb-10">Onde estamos</h1>
+								<h1 class="mb-10">Onde Estamos</h1>
 								<p>Faculdade CNEC Santo Ângelo Prédio X, andar Y sala Z</p>
 							</div>
 						</div>
