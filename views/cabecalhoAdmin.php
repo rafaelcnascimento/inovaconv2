@@ -42,8 +42,8 @@
                     </div>
                     <nav id="nav-menu-container">
                       <ul class="nav-menu">
-                        <li><a href="admin/curso.php">Cadastrar Curso</a></li>
-                        <li><a href="admin/colaborador.php">Cadastrar Colaborador</a></li>
+                        <li><a href="admin/curso">Cadastrar Curso</a></li>
+                        <li><a href="admin/colaborador">Cadastrar Colaborador</a></li>
                       </ul>
                     </nav><!-- #nav-menu-container -->                    
                   </div>
