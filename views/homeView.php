@@ -13,10 +13,10 @@
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img class="d-block w-100 altura-vitrine" src="../ejr/assets/img/slider/bg-1.jpg" alt="First slide"> 
+                  <img class="d-block w-100 altura-vitrine" src="../assets/img/slider/bg-1.jpg" alt="First slide"> 
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100 altura-vitrine" src="../ejr/assets/img/slider/bg-2.jpg" alt="Second slide">
+                  <img class="d-block w-100 altura-vitrine" src="../assets/img/slider/bg-2.jpg" alt="Second slide">
                 </div>
               </div>
               <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -45,17 +45,17 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                         <div class="thumb">
-                            <img src="../ejr/assets/img/xads.png" alt=""> 
+                            <img src="../assets/img/xads.png" alt=""> 
                         </div>
                 </div>
                 <div class="col-lg-4 col-md-6" style="margin-left: 50px;">
                         <div class="thumb">
-                            <img src="../ejr/assets/img/logo-adm.png" alt=""> 
+                            <img src="../assets/img/logo-adm.png" alt=""> 
                         </div>
                 </div>
                 <div class="col-lg-3 col-md-6" style="margin-left: -10px;">
                         <div class="thumb">
-                            <img src="../ejr/assets/img/logo-contabeis.png" alt="">   
+                            <img src="../assets/img/logo-contabeis.png" alt="">   
                         </div>
                 </div>
         </div>  
@@ -93,7 +93,7 @@
                                 <h1 class="mb-10">Nossos Parceiros</h1>
                             </div>
                             <div class="whatever">
-                                <img src="../ejr/assets/img/parceiros/cnec.png">
+                                <img src="../assets/img/parceiros/cnec.png">
                             </div>
                         </div>                      
                 </section>
@@ -169,7 +169,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 single-blog">
                     <div class="thumb">
-                        <img class="img-fluid" src="../ejr/assets/img/b1.jpg" alt="">                             
+                        <img class="img-fluid" src="../assets/img/b1.jpg" alt="">                             
                     </div>
                     <p class="meta">25 October, 2017  |  By <a href="#">Mark Wiens</a></p>
                     <a href="blog-single.html">
@@ -182,7 +182,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 single-blog">
                     <div class="thumb">
-                        <img class="img-fluid" src="../ejr/assets/img/b2.jpg" alt="">                             
+                        <img class="img-fluid" src="../assets/img/b2.jpg" alt="">                             
                     </div>
                     <p class="meta">25 October, 2017  |  By <a href="#">Mark Wiens</a></p>
                     <a href="blog-single.html">
@@ -195,7 +195,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 single-blog">
                     <div class="thumb">
-                        <img class="img-fluid" src="../ejr/assets/img/b3.jpg" alt="">                             
+                        <img class="img-fluid" src="../assets/img/b3.jpg" alt="">                             
                     </div>
                     <p class="meta">25 October, 2017  |  By <a href="#">Mark Wiens</a></p>
                     <a href="blog-single.html">
@@ -208,7 +208,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 single-blog">
                     <div class="thumb">
-                        <img class="img-fluid" src="../ejr/assets/img/b4.jpg" alt="">                             
+                        <img class="img-fluid" src="../assets/img/b4.jpg" alt="">                             
                     </div>
                     <p class="meta">25 October, 2017  |  By <a href="#">Mark Wiens</a></p>
                     <a href="blog-single.html">
