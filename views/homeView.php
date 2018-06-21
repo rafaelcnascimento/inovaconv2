@@ -1,4 +1,4 @@
-<?php include('cabecalhoHome.php'); ?>
+/<?php include('cabecalhoHome.php'); ?>
 
     <!--Banner Area--> 
     <!--IMPORTANTE: a classe pos-header deve ser usada em todos os primeiros elementos apos o cabecalho ou ele irá fica por cima do elemento--> 
@@ -13,10 +13,10 @@
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img class="d-block w-100 altura-vitrine" src="../assets/img/slider/bg-1.jpg" alt="First slide"> 
+                  <img class="d-block w-100 altura-vitrine" src="/views/assets/img/slider/bg-1.jpg" alt="First slide"> 
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100 altura-vitrine" src="../assets/img/slider/bg-2.jpg" alt="Second slide">
+                  <img class="d-block w-100 altura-vitrine" src="/views/assets/img/slider/bg-2.jpg" alt="Second slide">
                 </div>
               </div>
               <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -45,17 +45,17 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                         <div class="thumb">
-                            <img src="../assets/img/xads.png" alt=""> 
+                            <img src="views/assets/img/xads.png" alt=""> 
                         </div>
                 </div>
                 <div class="col-lg-4 col-md-6" style="margin-left: 50px;">
                         <div class="thumb">
-                            <img src="../assets/img/logo-adm.png" alt=""> 
+                            <img src="views/assets/img/logo-adm.png" alt=""> 
                         </div>
                 </div>
                 <div class="col-lg-3 col-md-6" style="margin-left: -10px;">
                         <div class="thumb">
-                            <img src="../assets/img/logo-contabeis.png" alt="">   
+                            <img src="views/assets/img/logo-contabeis.png" alt="">   
                         </div>
                 </div>
         </div>  
@@ -71,13 +71,27 @@
                     <h1 class="mb-10">Serviços Prestados</h1>
                 </div>
                 <div class="whatever">
-                    <p><li>Planejamento de marketing</li></p>
-                    <p><li>Planejamento estratégico</li></p>
-                    <p><li>Estudo de viabilidade financeira</li></p>
-                    <p><li>Planejamento tributário</li></p>
-                    <p><li>Gestão de custos</li></p>
-                    <p><li>Projeto de reestruturação empresarial</li></p>
-                    <p><li>Sugestão de ferramentas de gestão</li></p>
+                    <div class="row justify-content-between lista">
+                        <div class="col-auto">
+                            <li>Criação de identidade visual</li>
+                            <li>Logomarca</li>
+                            <li>Cartões de visita</li>
+                            <li>Auxílio na utilização de mídias digitais</li>
+                            <li>Fortalecimento organizacional</li>
+                            <li>Pesquisa de mercado</li>
+                            <li>Pesquisa de satisfação de clientes</li>
+                            <li>Prospecção de novos consumidores</li>
+                        </div>
+                        <div class="col-auto">
+                            <li>Melhoramento de layout interno</li>
+                            <li>Análise mercado</li>
+                            <li>Treinamento de pessoal</li>
+                            <li>Engajamento de equipes</li>
+                            <li>Formação de preço de venda</li>
+                            <li>Análise de custos empresariais</li>
+                            <li>Controle financeiro</li>
+                            <li>Fluxo de caixa</li>
+                        </div>
                 </div>
             </div>   
         </div>                       
@@ -93,7 +107,7 @@
                                 <h1 class="mb-10">Nossos Parceiros</h1>
                             </div>
                             <div class="whatever">
-                                <img src="../assets/img/parceiros/cnec.png">
+                                <img src="views/assets/img/parceiros/cnec.png">
                             </div>
                         </div>                      
                 </section>
@@ -169,7 +183,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 single-blog">
                     <div class="thumb">
-                        <img class="img-fluid" src="../assets/img/b1.jpg" alt="">                             
+                        <img class="img-fluid" src="views/assets/img/b1.jpg" alt="">                             
                     </div>
                     <p class="meta">25 October, 2017  |  By <a href="#">Mark Wiens</a></p>
                     <a href="blog-single.html">
@@ -182,7 +196,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 single-blog">
                     <div class="thumb">
-                        <img class="img-fluid" src="../assets/img/b2.jpg" alt="">                             
+                        <img class="img-fluid" src="views/assets/img/b2.jpg" alt="">                             
                     </div>
                     <p class="meta">25 October, 2017  |  By <a href="#">Mark Wiens</a></p>
                     <a href="blog-single.html">
@@ -195,7 +209,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 single-blog">
                     <div class="thumb">
-                        <img class="img-fluid" src="../assets/img/b3.jpg" alt="">                             
+                        <img class="img-fluid" src="views/assets/img/b3.jpg" alt="">                             
                     </div>
                     <p class="meta">25 October, 2017  |  By <a href="#">Mark Wiens</a></p>
                     <a href="blog-single.html">
@@ -208,7 +222,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 single-blog">
                     <div class="thumb">
-                        <img class="img-fluid" src="../assets/img/b4.jpg" alt="">                             
+                        <img class="img-fluid" src="views/assets/img/b4.jpg" alt="">                             
                     </div>
                     <p class="meta">25 October, 2017  |  By <a href="#">Mark Wiens</a></p>
                     <a href="blog-single.html">

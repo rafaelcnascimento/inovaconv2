@@ -4,7 +4,19 @@ require 'vendor/autoload.php';
 
 session_start();
 
-usuario::controle(2);
+usuario::controle(1);
+
+$usuario = $_SESSION['usuario'];
+
+$conn = db::conectar();
+
+$stmt = $conn->prepare("SELECT nome,email,telefone,is_admin , IF(`is_admin` = 1, 'Sim', ' ') AS `is_admin` FROM colaboradores");
+
+$stmt->execute();
+
+$colaboradores = $stmt->fetchAll();
+
+
 
 include('views/painel-adminView.php');
 

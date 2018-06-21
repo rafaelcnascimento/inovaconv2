@@ -13,6 +13,7 @@
       left: 0;
 }
 
+/*Sempre por antes de qualquer elemento para que ele nao seja coberto pelo header*/
 .pos-header{
     margin-top: 150px;
 }
@@ -57,4 +58,20 @@ body {
 
 .demo h1 {
   margin-top: 0;
+}
+
+.lista {
+  font-size: 20px; ]
+}
+
+/*Cor das listras das tableas*/
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: #acb5c4; 
+ }
+
+.tabela{
+  width: 70%;
+  font-weight: bold;
+  color: black;
 }

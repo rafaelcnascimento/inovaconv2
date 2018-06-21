@@ -1,6 +1,6 @@
 <?php 
 
-require 'vendor/autoload.php';
+require $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
 
 class usuario
 {
@@ -8,49 +8,85 @@ class usuario
     {
         switch ($tipo_usuario) {
             case 1:
-                if (!isset($_SESSION['admin']) && !isset($_SESSION['colab']))
+                if (!isset($_SESSION['usuario']))
                 {
                     header("location:loginPainel.php");
+                } 
+
+                if (!$_SESSION['usuario']->is_admin)
+                {
+                    echo ' <div>
+                               <center>
+                                   Acesso negado
+                               </center>
+                           </div>';
+                       
+                    die();
                 }
                 break;
 
             case 2:
-                if (isset($_SESSION['colab'])) 
+                if (!isset($_SESSION['usuario']))
                 {
-                    echo ' <div class="erro">
+                    header("location:loginPainel.php");
+                } 
+
+                if ($_SESSION['usuario']->is_admin)
+                {
+                    echo ' <div>
                                <center>
                                    Acesso negado
                                </center>
                            </div>';
                        
-                       die();
-                } else 
-                {
-                    if (!isset($_SESSION['admin']))
-                    {
-                        header("location:loginPainel.php");
-                    }
-                }
-                break;
-            case 3:
-                if (isset($_SESSION['admin'])) 
-                {
-                    echo ' <div class="erro">
-                               <center>
-                                   Acesso negado
-                               </center>
-                           </div>';
-                       
-                       die();
-                } else 
-                {
-                    if (!isset($_SESSION['colab']))
-                    {
-                        header("location:loginPainel.php");
-                    }
+                    die();
                 }
                 break;
         }
+    }
+
+    public static function login($email,$senha)
+    {
+        $conn = db::conectar();
+
+        $stmt = $conn->prepare("SELECT * FROM colaboradores WHERE email = :email");
+        
+        $stmt->bindParam(':email', $email);
+
+        $stmt->execute();
+
+        $dados = $stmt->fetch();
+
+        if (!$dados) 
+        {
+            echo '<div class="erro">
+                    <center>
+                        Dados incorretos
+                    </center>
+                </div>';
+            
+            die();
+        } else 
+        {
+            if ($dados->senha != $senha)
+            {
+                echo ' <div class="erro">
+                        <center>
+                            Dados incorretos
+                        </center>
+                    </div>';
+                
+                die();
+            }  else 
+            {
+
+                    session_start();
+
+                    $_SESSION['usuario'] = $dados;
+
+                    header("location:painel.php");
+            }
+        }           
     }
 
     public function getCursos($conn)
@@ -125,47 +161,4 @@ class usuario
         header("location:home.php");
     }
 
-    public static function login($email,$senha)
-    {
-        $conn = db::conectar();
-
-        $stmt = $conn->prepare("SELECT * FROM colaboradores WHERE email = :email");
-        
-        $stmt->bindParam(':email', $email);
-
-        $stmt->execute();
-
-        $dados = $stmt->fetch();
-
-        if (!$dados) 
-        {
-            echo '<div class="erro">
-                    <center>
-                        Dados incorretos
-                    </center>
-                </div>';
-            
-            die();
-        } else 
-        {
-            if ($dados->senha != $senha)
-            {
-                echo ' <div class="erro">
-                        <center>
-                            Dados incorretos
-                        </center>
-                    </div>';
-                
-                die();
-            }  else 
-            {
-
-                    session_start();
-
-                    $_SESSION['usuario'] = $dados;
-
-                    header("location:painel.php");
-            }
-        }           
-    }
 }
