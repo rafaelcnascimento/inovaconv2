@@ -6,14 +6,14 @@ session_start();
 
 $usuario = $_SESSION['usuario'];
 
-usuario::controle(1);
+Usuario::controle(1);
 
 if (isset($_POST['email']))
 {
     $email = $_POST['email'];
 
     try {
-        $conn = db::conectar();
+        $conn = Db::conectar();
 
         $stmt = $conn->prepare("SELECT * FROM wifitable.sis_cliente WHERE email = :email");
         
@@ -41,7 +41,7 @@ if (isset($_POST['email']))
     else
     {
         try {
-            $conn = db::conectar();
+            $conn = Db::conectar();
 
             $stmt = $conn->prepare("INSERT INTO inovacon.colaboradores (nome, email, senha,telefone)
                                     SELECT nome, email, senha, celular

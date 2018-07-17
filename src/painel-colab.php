@@ -4,4 +4,4 @@ require 'vendor/autoload.php';
 
 session_start();
 
-usuario::controle(2);
+Usuario::controle(2);

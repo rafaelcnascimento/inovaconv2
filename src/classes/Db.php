@@ -1,6 +1,6 @@
 <?php
 
-class db 
+class Db 
 {
     private function __contruct() {
     }
@@ -10,7 +10,7 @@ class db
         $servername = "localhost";
         $username = "root";
         $password = "";
-        $db = "inovacon";
+        $db = "ejr";
 
         try 
         {

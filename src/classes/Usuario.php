@@ -1,8 +1,6 @@
 <?php 
 
-require $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
-
-class usuario
+class Usuario extends Db
 {
     public function controle($tipo_usuario)
     {
@@ -47,7 +45,7 @@ class usuario
 
     public static function login($email,$senha)
     {
-        $conn = db::conectar();
+        $conn = Db::conectar();
 
         $stmt = $conn->prepare("SELECT * FROM colaboradores WHERE email = :email");
         

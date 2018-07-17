@@ -4,11 +4,11 @@ require 'vendor/autoload.php';
 
 session_start();
 
-usuario::controle(1);
+Usuario::controle(1);
 
 $usuario = $_SESSION['usuario'];
 
-$conn = db::conectar();
+$conn = Db::conectar();
 
 $stmt = $conn->prepare("SELECT nome,email,telefone,is_admin , IF(`is_admin` = 1, 'Sim', ' ') AS `is_admin` FROM colaboradores");
 

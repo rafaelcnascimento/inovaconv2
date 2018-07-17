@@ -15,22 +15,22 @@
             </div>
         </footer>
         <!-- End footer Area -->    
-        <script src="../views/assets/js/vendor/jquery-2.2.4.min.js"></script>
+        <script src="src/assets/js/vendor/jquery-2.2.4.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" </script>
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-        <script src="../views/assets/js/easing.min.js"></script>            
-        <script src="../views/assets/js/hoverIntent.js"></script>
-        <script src="../views/assets/js/superfish.min.js"></script> 
-        <script src="../views/assets/js/mn-accordion.js"></script>
-        <script src="../views/assets/js/jquery.ajaxchimp.min.js"></script>
-        <script src="../views/assets/js/jquery.magnific-popup.min.js"></script> 
-        <script src="../views/assets/js/owl.carousel.min.js"></script>                      
-        <script src="../views/assets/js/jquery.nice-select.min.js"></script>    
-        <script src="../views/assets/js/jquery.circlechart.js"></script>                                
-        <script src="../views/assets/js/mail-script.js"></script>   
-        <script src="../views/assets/js/main.js"></script>  
+        <script type="application/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+        <script src="src/assets/js/easing.min.js"></script>            
+        <script src="src/assets/js/hoverIntent.js"></script>
+        <script src="src/assets/js/superfish.min.js"></script> 
+        <script src="src/assets/js/mn-accordion.js"></script>
+        <script src="src/assets/js/jquery.ajaxchimp.min.js"></script>
+        <script src="src/assets/js/jquery.magnific-popup.min.js"></script> 
+        <script src="src/assets/js/owl.carousel.min.js"></script>                      
+        <script src="src/assets/js/jquery.nice-select.min.js"></script>    
+        <script src="src/assets/js/jquery.circlechart.js"></script>                                
+        <script src="src/assets/js/mail-script.js"></script>   
+        <script src="src/assets/js/main.js"></script>  
         <!--Nosso CSS personalizado vai aqui-->
-        <link rel="stylesheet" href="../views/assets/js/personalizado.js">
+        <link rel="application/javascript" href="src/assets/js/personalizado.js">
     </body>
 </html>
