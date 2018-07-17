@@ -10,13 +10,12 @@ else
 {
     if ($_SESSION['usuario']->is_admin)
     {
-       $_SESSION['admin'] = $_SESSION['usuario'];
-       header("location:painel-admin");
+        $_SESSION['admin'] = $_SESSION['usuario'];
+        header("location:painel-admin");
     } 
     else 
     {
-       $_SESSION['colab'] = $_SESSION['usuario'];
-       header("location:painel-colaborador");
+        $_SESSION['colab'] = $_SESSION['usuario'];
+        header("location:painel-colaborador");
     }
 }   
-

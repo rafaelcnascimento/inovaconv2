@@ -8,7 +8,7 @@ class Usuario extends Db
             case 1:
                 if (!isset($_SESSION['usuario']))
                 {
-                    header("location:loginPainel.php");
+                    header("location:loginPainel");
                 } 
 
                 if (!$_SESSION['usuario']->is_admin)
@@ -26,7 +26,7 @@ class Usuario extends Db
             case 2:
                 if (!isset($_SESSION['usuario']))
                 {
-                    header("location:loginPainel.php");
+                    header("location:loginPainel");
                 } 
 
                 if ($_SESSION['usuario']->is_admin)
@@ -82,7 +82,7 @@ class Usuario extends Db
 
                     $_SESSION['usuario'] = $dados;
 
-                    header("location:painel.php");
+                    header("location:painel");
             }
         }           
     }
@@ -156,7 +156,7 @@ class Usuario extends Db
     {
         session_destroy();
 
-        header("location:home.php");
+        header("location:");
     }
 
 }
