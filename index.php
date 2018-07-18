@@ -2,8 +2,6 @@
 
 $uri = substr($_SERVER['REQUEST_URI'], 1);
 
-echo "$uri";
-
 require 'vendor/autoload.php';
 
 if ($uri == '') {
