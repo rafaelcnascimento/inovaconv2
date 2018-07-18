@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="src/assets/img/favicon.ico">
+    <link rel="icon" type="image/png" href="src/assets/img/favicon.png"">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>Faculdade CNEC Santo Ângelo</title>
+    <title>Inovacon</title>
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -39,77 +39,23 @@
 
         <div class="sidebar-wrapper">
             <div class="logo">
-                <a href="http://cnecsan.cnec.br/" class="simple-text">
-                    <img class="moveimage" src="src/assets/img/cnec-logo.png" width="34" height="40" alt="Logo Cnec">
+                <a href="http://www.inovaconjr.com.br/" class="simple-text">
+                    <img class="moveimage" src="src/assets/img/logo.png" width="175" height="40" alt="Logo Cnec">
                 </a>
             </div>
             <ul class="nav">
                 <li class="active">
-                    <a href="/admin/funcionarios">
-                        <i class="pe-7s-id"></i>
-                        <p>Funcionarios</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="/admin/alunos">
-                        <i class="pe-7s-study"></i>
-                        <p>Alunos</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="/admin/professores">
-                        <i class="pe-7s-user"></i>
-                        <p>Professores</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="/admin/adicionar-funcionario">
-                        <i class="pe-7s-bookmarks"></i>
-                        <p>Adicionar funcionario</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="/admin/adicionar-aluno">
+                    <a href="/admin/colaboradores">
                         <i class="pe-7s-users"></i>
-                        <p>Adicionar aluno</p>
+                        <p>Colaboradores</p>
                     </a>
                 </li>
                 <li>
-                    <a href="/admin/adicionar-professor">
-                        <i class="pe-7s-add-user"></i>
-                        <p>Adicionar professor</p>
+                    <a href="/admin/colaboradores-registrar">
+                        <i class="pe-7s-id"></i>
+                        <p>Registrar colaborador</p>
                     </a>
                 </li>
-                <li>
-                    <a href="/admin/memorandos">
-                        <i class="pe-7s-note"></i>
-                        <p>Memorandos</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="/admin/telefones">
-                        <i class="pe-7s-phone"></i>
-                        <p>Telefones</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="/admin/relatorios">
-                        <i class="pe-7s-note2"></i>
-                        <p>Relatórios</p>
-                    </a>
-                </li>
-            <!--     <li>
-                    <a href="/admin/contato">
-                        <i class="pe-7s-mail"></i>
-                        <p>E-mail dos professores</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="/admin/.com/SGCE/certificados/#/">
-                        <i class="pe-7s-news-paper"></i>
-                        <p>Certificados</p>
-                    </a>
-                </li> -->       
             </ul>
         </div>
     </div>

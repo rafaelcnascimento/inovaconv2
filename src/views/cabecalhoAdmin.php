@@ -1,53 +1,102 @@
-<!DOCTYPE html>
-<html lang="zxx" class="no-js">
+<!doctype html>
+<html lang="pt-br">
 <head>
-    <!-- Mobile Specific Meta -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Favicon-->
-    <link rel="shortcut icon" href="src/assets/img/favicon.png">
-    <!-- Author Meta -->
-    <meta name="author" content="ADS">
-    <!-- Idioma -->
-    <meta http-equiv="Content-Language" content="pt-br">
-    <!-- Meta Description -->
-    <meta name="description" content="">
-    <!-- Meta Keyword -->
-    <meta name="keywords" content="">
-    <!-- meta character set -->
-    <meta charset="UTF-8">
-    <!-- Site Title -->
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="src/assets/img/favicon.png"">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
     <title>Inovacon</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
-        <!--
-        CSS
-        ============================================= -->
-        <link rel="stylesheet" href="src/assets/css/linearicons.css">
-        <link rel="stylesheet" href="src/assets/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="src/assets/css/magnific-popup.css">
-        <link rel="stylesheet" href="src/assets/css/nice-select.css">                          
-        <link rel="stylesheet" href="src/assets/css/animate.min.css">
-        <link rel="stylesheet" href="src/assets/css/owl.carousel.css">
-        <link rel="stylesheet" href="src/assets/css/main.css">
-        <!--Nosso CSS personalizado vai aqui-->
-        <link rel="stylesheet" href="src/assets/css/personalizado.css">
-    </head>
-        <body>  
-            <header id="header" id="home">
-              <div class="container main-menu">
-                  <div class="row align-items-center justify-content-between d-flex">
-                    <div id="logo" style="margin-left: -60px;">
-                      <a href="../painel-admin.php"><img src="src/assets/img/logo.png" alt="" title="" /></a>
-                    </div>
-                    <nav id="nav-menu-container">
-                      <ul class="nav-menu">
-                        <li><a href="admin/curso.php">Cadastrar Curso</a></li>
-                        <li><a href="admin/colaborador.php">Cadastrar Colaborador</a></li>
-                        <li><?=strtok($usuario->nome,  ' ');?></li>
-                      </ul>
-                    </nav><!-- #nav-menu-container -->                    
-                  </div>
-              </div>
-            </header><!-- #header -->
-            <!--IMPORTANTE: a classe pos-header deve ser usada em todos os primeiros elementos apos o cabecalho ou ele irá fica por cima do elemento--> 
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <!--  Light Bootstrap Table core CSS    -->
+    <link href="/src/assets/css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet"/>
+
+   <!--CSS -->
+   <link rel="stylesheet" href="src/assets/css/linearicons.css">
+   <link rel="stylesheet" href="src/assets/css/font-awesome.min.css">
+   <link rel="stylesheet" href="src/assets/css/magnific-popup.css">
+   <link rel="stylesheet" href="src/assets/css/nice-select.css">                          
+   <link rel="stylesheet" href="src/assets/css/animate.min.css">
+   <link rel="stylesheet" href="src/assets/css/owl.carousel.css">
+   <link rel="stylesheet" href="src/assets/css/main.css">
+   <link href="/src/assets/css/bootstrap.min.css" rel="stylesheet" />
+   <!--Nosso CSS personalizado vai aqui-->
+   <link rel="stylesheet" href="src/assets/css/personalizado.css">
+
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="src/assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar" data-color="purple" data-image="src/assets/img/sidebar-5.jpg">
+
+    <!--
+
+        Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
+        Tip 2: you can also add an image using data-image tag
+
+    -->
+
+        <div class="sidebar-wrapper">
+            <div class="logo">
+                <a href="http://www.inovaconjr.com.br/" class="simple-text">
+                    <img class="moveimage" src="src/assets/img/logo.png" width="175" height="40" alt="Logo Cnec">
+                </a>
+            </div>
+            <ul class="nav">
+                <li class="active">
+                    <a href="/admin/colaboradores">
+                        <i class="pe-7s-users"></i>
+                        <p>Colaboradores</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/admin/colaboradores-registrar">
+                        <i class="pe-7s-id"></i>
+                        <p>Registrar colaborador</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-panel">
+        <nav class="navbar navbar-default navbar-fixed">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>  
+                </div>
+                <!-- Dropbown do logout -->
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <p>
+                                            <?=$usuario->nome?>
+                                            <b class="caret"></b>
+                                        </p>
+                                  </a>
+                                  <ul class="dropdown-menu">
+                                    <li><a href="logout">Logout</a></li>
+                                  </ul>
+                            </li>
+                        <li class="separator hidden-lg"></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="content">
+            <div class="container-fluid">
+ 

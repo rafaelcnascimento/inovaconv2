@@ -1,7 +1,5 @@
 <?php 
 
-require $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
-
 session_start();
 
 $usuario = $_SESSION['usuario'];

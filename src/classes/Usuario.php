@@ -1,6 +1,8 @@
 <?php 
 
-class Usuario extends Db
+require 'Db.php';
+
+class Usuario 
 {
     public function controle($tipo_usuario)
     {
@@ -151,12 +153,5 @@ class Usuario extends Db
 
         $_SESSION['aluno']->logado = true;
     }
-
-    public function logout()
-    {
-        session_destroy();
-
-        header("location:");
-    }
-
+ 
 }

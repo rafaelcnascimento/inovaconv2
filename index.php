@@ -8,9 +8,13 @@ if ($uri == '') {
     include 'src/home.php';
 }
 
-try {
-    if(!@include'src/'.$uri.'.php') throw new Exception;
-} catch (Exception $e) {
+if (file_exists('src/'.$uri.'.php')) 
+{
+   include 'src/'.$uri.'.php';
+} 
+
+else 
+{
    http_response_code(404);
    die();
 }
