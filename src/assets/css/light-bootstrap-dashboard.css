@@ -528,7 +528,7 @@ input:focus {
 .main-panel > .content {
    padding: 30px 15px;
    min-height: calc(100% - 65px);
-   background-color: #edeff5;
+   background-color: #F8F8F8;
 }
 
 .main-panel > .footer {

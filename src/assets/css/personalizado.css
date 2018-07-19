@@ -64,14 +64,15 @@ body {
   font-size: 20px; ]
 }
 
-/*Cor das listras das tableas*/
-.table-striped>tbody>tr:nth-child(odd)>td, 
+/*Cor das listras das tabelas*/
+/*.table-striped>tbody>tr:nth-child(odd)>td, 
 .table-striped>tbody>tr:nth-child(odd)>th {
-   background-color: #acb5c4; 
- }
+   background-color: #B8DAFF; 
+ }*/
 
 .tabela{
   width: 70%;
   font-weight: bold;
   color: black;
 }
+

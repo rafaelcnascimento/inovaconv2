@@ -1,7 +1,5 @@
 <?php 
 
-require 'vendor/autoload.php';
-
 session_start();
 
 Usuario::controle(1);
@@ -16,11 +14,4 @@ $stmt->execute();
 
 $colaboradores = $stmt->fetchAll();
 
-
-
-include('views/painel-adminView.php');
-
-// INSERT INTO inovacon.colaboradores (nome, email, senha)
-// SELECT nome, email, senha
-// FROM wifitable.sis_cliente
-// WHERE id = 8977
+include('src/views/admin/colaboradoresView.php');

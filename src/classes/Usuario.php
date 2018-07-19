@@ -84,7 +84,7 @@ class Usuario
 
                     $_SESSION['usuario'] = $dados;
 
-                    header("location:painel");
+                    header("location:admin/colaboradores");
             }
         }           
     }

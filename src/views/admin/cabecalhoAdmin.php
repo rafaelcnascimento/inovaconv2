@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="src/assets/img/favicon.png"">
+    <link rel="icon" type="image/png" href="/src/assets/img/favicon.png"">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
     <title>Inovacon</title>
@@ -14,49 +14,41 @@
     <link href="/src/assets/css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet"/>
 
    <!--CSS -->
-   <link rel="stylesheet" href="src/assets/css/linearicons.css">
-   <link rel="stylesheet" href="src/assets/css/font-awesome.min.css">
-   <link rel="stylesheet" href="src/assets/css/magnific-popup.css">
-   <link rel="stylesheet" href="src/assets/css/nice-select.css">                          
-   <link rel="stylesheet" href="src/assets/css/animate.min.css">
-   <link rel="stylesheet" href="src/assets/css/owl.carousel.css">
-   <link rel="stylesheet" href="src/assets/css/main.css">
+   <link rel="stylesheet" href="/src/assets/css/linearicons.css">
+   <link rel="stylesheet" href="/src/assets/css/font-awesome.min.css">
+   <link rel="stylesheet" href="/src/assets/css/magnific-popup.css">
+   <link rel="stylesheet" href="/src/assets/css/nice-select.css">                          
+   <link rel="stylesheet" href="/src/assets/css/animate.min.css">
+   <link rel="stylesheet" href="/src/assets/css/owl.carousel.css">
+   <link rel="stylesheet" href="/src/assets/css/main.css">
    <link href="/src/assets/css/bootstrap.min.css" rel="stylesheet" />
    <!--Nosso CSS personalizado vai aqui-->
-   <link rel="stylesheet" href="src/assets/css/personalizado.css">
+   <link rel="stylesheet" href="/src/assets/css/personalizado.css">
 
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
-    <link href="src/assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+    <link href="/src/assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
 
 </head>
 <body>
 
 <div class="wrapper">
-    <div class="sidebar" data-color="purple" data-image="src/assets/img/sidebar-5.jpg">
-
-    <!--
-
-        Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
-        Tip 2: you can also add an image using data-image tag
-
-    -->
-
+    <div class="sidebar" data-color="purple">
         <div class="sidebar-wrapper">
             <div class="logo">
                 <a href="http://www.inovaconjr.com.br/" class="simple-text">
-                    <img class="moveimage" src="src/assets/img/logo.png" width="175" height="40" alt="Logo Cnec">
+                    <img class="moveimage" src="/src/assets/img/logo.png" width="175" height="40" alt="Logo Cnec">
                 </a>
             </div>
             <ul class="nav">
-                <li class="active">
+                <li <?php if ($_SERVER['REQUEST_URI'] == '/admin/colaboradores'): ?> class="active" <?php endif ?>>
                     <a href="/admin/colaboradores">
                         <i class="pe-7s-users"></i>
                         <p>Colaboradores</p>
                     </a>
                 </li>
-                <li>
+                <li <?php if ($_SERVER['REQUEST_URI'] == '/admin/colaboradores-registrar'): ?> class="active" <?php endif ?>>
                     <a href="/admin/colaboradores-registrar">
                         <i class="pe-7s-id"></i>
                         <p>Registrar colaborador</p>
@@ -67,7 +59,7 @@
     </div>
 
     <div class="main-panel">
-        <nav class="navbar navbar-default navbar-fixed">
+        <nav class="navbar navbar-default navbar-fixed navbarra">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
@@ -98,5 +90,3 @@
         </nav>
 
         <div class="content">
-            <div class="container-fluid">
- 

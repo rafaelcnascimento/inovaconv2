@@ -26,13 +26,13 @@ if (isset($_POST['email']))
 
     if (!$stmt->rowCount() > 0) 
     {
-        include('../views/colaboradorView.php');
+        $mensagem = ' <br><div class="alert alert-danger">
+                        <center>
+                            Email inexistente ou não cadastrado pelo aluno
+                        </center>
+                    </div>';
 
-        echo ' <br><div class="alert alert-danger">
-                <center>
-                    Email inexistente ou não cadastrado pelo aluno
-                </center>
-            </div>';
+        include('src/views/admin/colaboradores-registrarView.php');
         
         die();
     }
@@ -41,7 +41,7 @@ if (isset($_POST['email']))
         try {
             $conn = Db::conectar();
 
-            $stmt = $conn->prepare("INSERT INTO inovacon.colaboradores (nome, email, senha,telefone)
+            $stmt = $conn->prepare("INSERT INTO ejr.colaboradores (nome, email, senha,telefone)
                                     SELECT nome, email, senha, celular
                                     FROM wifitable.sis_cliente
                                     WHERE email = :email");
@@ -50,27 +50,30 @@ if (isset($_POST['email']))
 
             $stmt->execute();
 
-            include('../views/colaboradorView.php');
+            include('src/views/admin/colaboradores-registrarView.php');
 
-            echo ' <br><div class="alert alert-success">
-                        <center>
-                            <strong>Colaborador cadastrado com sucesso</strong>
-                        <center>    
-                    </div>';
+            $mensagem = '<br><div class="alert alert-success">
+                            <center>
+                                <strong>Colaborador cadastrado com sucesso</strong>
+                            <center>    
+                        </div>';
             
             die();
             
         }  catch(PDOException $e) {
             if ($e->errorInfo[1] == 1062) 
             {
-            include('../views/colaboradorView.php');    
             
-            echo '<br><div class="alert alert-danger">
-                    <center>
-                        Email já cadastrado
-                    </center>
-                </div>';
-            die();   
+            $mensagem = '<br><div class="alert alert-danger">
+                            <center>
+                                Email já cadastrado
+                            </center>
+                        </div>';
+        
+            include('src/views/admin/colaboradores-registrarView.php');    
+
+            die();
+
             } else {
                 echo $e->getMessage();
                 die();
@@ -79,4 +82,4 @@ if (isset($_POST['email']))
     }
 }
 
-include('../views/colaboradorView.php');
+include('src/views/admin/colaboradores-registrarView.php');
