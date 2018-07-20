@@ -89,6 +89,44 @@ class Usuario
         }           
     }
 
+    public function deletarColab($id)
+    {
+        $conn = Db::conectar();
+
+        $stmt = $conn->prepare("DELETE FROM colaboradores WHERE id = :id");
+        
+        $stmt->bindParam(':id', $id);
+
+        $stmt->execute();
+
+        $mensagem = '<br><div class="alert alert-success">
+                        <center>
+                            <strong>Colaborador removido com sucesso</strong>
+                        <center>    
+                    </div>';
+        
+        return $mensagem;
+    }
+
+    public function promoverColab($id)
+    {
+        $conn = Db::conectar();
+
+        $stmt = $conn->prepare("UPDATE colaboradores SET is_admin = 1 WHERE id = :id");
+        
+        $stmt->bindParam(':id', $id);
+
+        $stmt->execute();
+
+        $mensagem = '<br><div class="alert alert-success">
+                        <center>
+                            <strong>Colaborador promovido com sucesso</strong>
+                        <center>    
+                    </div>';
+        
+        return $mensagem;
+    }
+
     public function getCursos($conn)
     {
         $sql="SELECT * FROM cursos";
@@ -100,58 +138,6 @@ class Usuario
         return $dados;
     }
 
-    public function loginEmpresa($email,$senha,$conn)
-    {
-        $sql="SELECT * FROM empresas WHERE email = '$email'";
-        
-        $resultado = mysqli_query($conn, $sql);
-
-        $dados = $resultado->fetch_object();
-
-        if (!$dados) 
-        {
-            echo "Dados incorretos ou cadastro inativo";
-            die();
-        } 
-        else
-        {
-            if ($dados->senha != $senha || $dados->aprovado == null)
-            {
-                echo "Dados incorretos ou cadastro inativo";
-                die();
-            }
-        }
-
-        $_SESSION['empresa'] = $dados;
-
-        $_SESSION['empresa']->logado = true;
-    }
-
-    public function loginAluno($email,$senha,$conn)
-    {
-        $sql="SELECT * FROM usuarios WHERE email = '$email'";
-        
-        $resultado = mysqli_query($conn, $sql);
-
-        $dados = $resultado->fetch_object();
-
-        if (!$dados) 
-        {
-            echo "Dados incorretos";
-            die();
-        } 
-        else
-        {
-            if ($dados->senha != $senha)
-            {
-                echo "Dados incorretos";
-                die();
-            }
-        }
-
-        $_SESSION['aluno'] = $dados;
-
-        $_SESSION['aluno']->logado = true;
-    }
+    
  
 }

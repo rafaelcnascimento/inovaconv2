@@ -50,15 +50,13 @@ if (isset($_POST['email']))
 
             $stmt->execute();
 
-            include('src/views/admin/colaboradores-registrarView.php');
-
             $mensagem = '<br><div class="alert alert-success">
                             <center>
                                 <strong>Colaborador cadastrado com sucesso</strong>
                             <center>    
                         </div>';
             
-            die();
+            include('src/views/admin/colaboradores-registrarView.php');
             
         }  catch(PDOException $e) {
             if ($e->errorInfo[1] == 1062) 

@@ -10,20 +10,13 @@
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
 
+    <!-- Bootstrap core CSS     -->
+    <link href="/src/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!--Nosso CSS personalizado vai aqui-->
+    <link rel="stylesheet" href="/src/assets/css/painel-personalizado.css">
+
     <!--  Light Bootstrap Table core CSS    -->
     <link href="/src/assets/css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet"/>
-
-   <!--CSS -->
-   <link rel="stylesheet" href="/src/assets/css/linearicons.css">
-   <link rel="stylesheet" href="/src/assets/css/font-awesome.min.css">
-   <link rel="stylesheet" href="/src/assets/css/magnific-popup.css">
-   <link rel="stylesheet" href="/src/assets/css/nice-select.css">                          
-   <link rel="stylesheet" href="/src/assets/css/animate.min.css">
-   <link rel="stylesheet" href="/src/assets/css/owl.carousel.css">
-   <link rel="stylesheet" href="/src/assets/css/main.css">
-   <link href="/src/assets/css/bootstrap.min.css" rel="stylesheet" />
-   <!--Nosso CSS personalizado vai aqui-->
-   <link rel="stylesheet" href="/src/assets/css/personalizado.css">
 
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -54,12 +47,24 @@
                         <p>Registrar colaborador</p>
                     </a>
                 </li>
+                <li <?php if ($_SERVER['REQUEST_URI'] == '/admin/cursos'): ?> class="active" <?php endif ?>>
+                    <a href="/admin/cursos">
+                        <i class="pe-7s-study"></i>
+                        <p>Cursos</p>
+                    </a>
+                </li>
+                <li <?php if ($_SERVER['REQUEST_URI'] == '/admin/cursos-registrar'): ?> class="active" <?php endif ?>>
+                    <a href="/admin/cursos-registrar">
+                        <i class="pe-7s-note"></i>
+                        <p>Registrar Curso</p>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
 
     <div class="main-panel">
-        <nav class="navbar navbar-default navbar-fixed navbarra">
+        <nav class="navbar navbar-default navbar-fixed">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
@@ -80,7 +85,7 @@
                                         </p>
                                   </a>
                                   <ul class="dropdown-menu">
-                                    <li><a href="logout">Logout</a></li>
+                                    <li><a href="#">Logout</a></li>
                                   </ul>
                             </li>
                         <li class="separator hidden-lg"></li>
@@ -89,4 +94,6 @@
             </div>
         </nav>
 
+
         <div class="content">
+
