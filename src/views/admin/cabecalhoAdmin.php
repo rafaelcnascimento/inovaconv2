@@ -59,6 +59,12 @@
                         <p>Registrar Curso</p>
                     </a>
                 </li>
+                <li <?php if ($_SERVER['REQUEST_URI'] == '/admin/noticia-publicar'): ?> class="active" <?php endif ?>>
+                    <a href="/admin/noticia-publicar">
+                        <i class="pe-7s-news-paper"></i>
+                        <p>Publicar notícia</p>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>

@@ -11,7 +11,7 @@ else
     if ($_SESSION['usuario']->is_admin)
     {
         $_SESSION['admin'] = $_SESSION['usuario'];
-        header("location:painel-admin");
+        header("location:/admin/colaboradores");
     } 
     else 
     {

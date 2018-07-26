@@ -4,7 +4,7 @@ $uri = substr($_SERVER['REQUEST_URI'], 1);
 
 require 'vendor/autoload.php';
 
-if ($uri == '') {
+if ($uri == '' || $uri == 'home') {
     include 'src/home.php';
 }
 
