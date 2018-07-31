@@ -7,5 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Db' => $baseDir . '/src/classes/Db.php',
+    'Noticia' => $baseDir . '/src/classes/Noticia.php',
     'Usuario' => $baseDir . '/src/classes/Usuario.php',
 );

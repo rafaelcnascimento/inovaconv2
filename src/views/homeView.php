@@ -6,33 +6,51 @@
         <div class="col-md-12 pb-50 header-text text-center">
             <h1 class="mb-10">Últimas Notícias</h1>
         </div>    
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img class="d-block w-100 altura-vitrine" src="src/assets/img/slider/bg-1.jpg" alt="First slide"> 
+        <center>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="width: 70%;">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <?php foreach ($noticias as $noticia)
+                    {
+                        if ($i == 0)
+                        {
+                            echo '<div class="carousel-item active">';
+                        }
+                        else
+                        {
+                            echo '<div class="carousel-item">';
+                        }
+                        echo   '<a href="noticia?id='.$noticia->id.'"> 
+                                    <img class="d-block w-100 altura-vitrine" src="'.$noticia->capa.'" alt="First slide"> 
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <p style="font-size: 30px;line-height: 30px; ">'.$noticia->titulo.'</p>
+                                    </div>
+                                </div></a>';
+                        $i++;
+                    }?>
+                    
                 </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100 altura-vitrine" src="src/assets/img/slider/bg-2.jpg" alt="Second slide">
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próxima</span>
+                </a>
             </div>
+        </center>
     </section>
     <!-- End banner Area -->
     
     <!-- Start service Area -->
-    <section class="service-area section-gap" id="service">
+    <section class="service-area section-gap" id="quem-somos">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-12 pb-50 header-text text-center">
@@ -42,22 +60,9 @@
                     </p>
                 </div>
             </div>                      
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                        <div class="thumb">
-                            <img src="src/assets/img/xads.png" alt=""> 
-                        </div>
-                </div>
-                <div class="col-lg-4 col-md-6" style="margin-left: 50px;">
-                        <div class="thumb">
-                            <img src="src/assets/img/logo-adm.png" alt=""> 
-                        </div>
-                </div>
-                <div class="col-lg-3 col-md-6" style="margin-left: -10px;">
-                        <div class="thumb">
-                            <img src="src/assets/img/logo-contabeis.png" alt="">   
-                        </div>
-                </div>
+           <div>
+               <img src="src/assets/img/logo-cursos.jpg" style="width: 1100px;">
+           </div>    
         </div>  
     </div>
     </section>
@@ -100,7 +105,7 @@
 
 
     <!-- Carrossel com os parceiros -->
-    <section class="service-area section-gap" id="parceiros" style="margin-bottom: -220px;">
+    <section class="service-area section-gap" id="parceiros" style="margin-bottom: -180px;">
                     <div class="container" style="margin-top: -10%;">
                         <div class="row justify-content-center">
                             <div class="col-md-12 pb-50 header-text text-center">

@@ -1,5 +1,9 @@
 <?php include('cabecalhoAdmin.php'); ?>
 
+    <?php if (isset($mensagem)): ?>
+        <?=$mensagem?>
+    <?php endif ?>
+
     <form method="POST" action="/admin/noticia-publicar" enctype="multipart/form-data">
         <div class="form-group">
             <label for="email">Título da notícia:</label>
@@ -7,7 +11,7 @@
         </div>
         <div class="form-group">
             <label for="capa">Capa da notícia:</label>
-            <input type="file" name="capa"  accept="application/pdf">
+            <input type="file" name="capa" accept="image/*">
         </div>
         <div class="form-group">
             <label for="corpo">Corpo da notícia:</label>

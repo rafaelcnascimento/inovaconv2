@@ -129,7 +129,7 @@ class Usuario
 
     public function getCursos($conn)
     {
-        $sql="SELECT * FROM cursos";
+        $sql="SELECT * FROM graduacoes";
                 
         $resultado = mysqli_query($conn, $sql);
 

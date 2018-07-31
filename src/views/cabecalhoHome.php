@@ -38,17 +38,17 @@
               <div class="container main-menu">
                   <div class="row align-items-center justify-content-between d-flex">
                     <div id="logo" style="margin-left: -60px;">
-                      <a href="index.php"><img src="src/assets/img/logo.png" alt="" title="" /></a>
+                      <a href="home"><img src="src/assets/img/logo.png" alt="" title="" /></a>
                     </div>
                     <nav id="nav-menu-container">
                       <ul class="nav-menu">
                         <li><a href="#ultimas-noticias">Início</a></li>
-                        <li><a href="about.html">Quem Somos</a></li>
+                        <li><a href="#quem-somos">Quem Somos</a></li>
                         <li><a href="#servicos">Serviços</a></li>
-                        <li><a target="_blank" href="cursos.php">Cursos</a></li>
-                        <li><a target="_blank" href="cursos.php">Notícias</a></li>
-                        <li><a href="services.html">Parceiros</a></li>
-                        <li><a target="_blank" href="acoes-sociais.php">Ações sociais</a></li>                                  
+                        <li><a target="_blank" href="cursos">Cursos</a></li>
+                        <li><a target="_blank" href="cursos">Notícias</a></li>
+                        <li><a href="#parceiros">Parceiros</a></li>
+                        <li><a target="_blank" href="acoes-sociais">Ações sociais</a></li>                                  
                         <li><a href="#contato">Contato</a></li>                         
                         <li><a target="_blank" href="http://cnecsan.cnec.br/servicos-a-comunidade/">Portal do Trabalho</a></li>
                       </ul>
