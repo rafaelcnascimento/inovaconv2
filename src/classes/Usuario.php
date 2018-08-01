@@ -4,7 +4,7 @@ require 'Db.php';
 
 class Usuario 
 {
-    public function controle($tipo_usuario)
+    public static function controle($tipo_usuario)
     {
         switch ($tipo_usuario) {
             case 1:
@@ -89,7 +89,7 @@ class Usuario
         }           
     }
 
-    public function deletarColab($id)
+    public static function deletarColab($id)
     {
         $conn = Db::conectar();
 
@@ -108,7 +108,7 @@ class Usuario
         return $mensagem;
     }
 
-    public function promoverColab($id)
+    public static function promoverColab($id)
     {
         $conn = Db::conectar();
 
@@ -127,7 +127,7 @@ class Usuario
         return $mensagem;
     }
 
-    public function getCursos($conn)
+    public static function getCursos($conn)
     {
         $sql="SELECT * FROM graduacoes";
                 

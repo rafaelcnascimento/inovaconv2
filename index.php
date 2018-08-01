@@ -5,9 +5,9 @@ $uri = substr($_SERVER['REQUEST_URI'], 1);
 
 require 'vendor/autoload.php';
 
-if ($uri == '' || $uri == 'home')
+if ($uri == '')
 {
-    include 'src/home.php';
+    $uri = 'home';
 }
 
 //Se a URL contem parametos GET deve ser tratada de uma maneira diferente
@@ -21,7 +21,7 @@ if (strpos($uri, '?') !== false)
 
 if (file_exists('src/'.$uri.'.php')) 
 {
-   include 'src/'.$uri.'.php';
+    include 'src/'.$uri.'.php';
 } 
 
 else 

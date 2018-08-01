@@ -68,13 +68,13 @@
     </section>
     <!-- End service Area -->
     
-    <!-- Carrossel com os parceiros -->
-    <section class="service-area section-gap" id="servicos" style="margin-bottom: 10px;">
-        <div class="container" style="margin-top: -10%;">
+    <!-- Servicos -->
+    <div class="col-md-12 pb-50 header-text text-center">
+        <h1 class="mb-10">Serviços Prestados</h1>
+    </div>
+    <section class="service-area section-gap" id="servicos" style="margin-bottom: 10px; ">
+        <div class="container" style="margin-top:-100px; background-image: url('src/assets/img/fundo.jpg'); padding-bottom: 100px; padding-top: 100px; color: white;">
             <div class="row justify-content-center">
-                <div class="col-md-12 pb-50 header-text text-center">
-                    <h1 class="mb-10">Serviços Prestados</h1>
-                </div>
                 <div class="whatever">
                     <div class="row justify-content-between lista">
                         <div class="col-auto">
@@ -106,16 +106,16 @@
 
     <!-- Carrossel com os parceiros -->
     <section class="service-area section-gap" id="parceiros" style="margin-bottom: -180px;">
-                    <div class="container" style="margin-top: -10%;">
-                        <div class="row justify-content-center">
-                            <div class="col-md-12 pb-50 header-text text-center">
-                                <h1 class="mb-10">Nossos Parceiros</h1>
-                            </div>
-                            <div class="whatever">
-                                <img src="src/assets/img/parceiros/cnec.png">
-                            </div>
-                        </div>                      
-                </section>
+        <div class="container" style="margin-top: -10%;">
+            <div class="row justify-content-center">
+                <div class="col-md-12 pb-50 header-text text-center">
+                    <h1 class="mb-10">Nossos Parceiros</h1>
+                </div>
+                <div class="whatever">
+                    <img src="src/assets/img/parceiros/cnec.png">
+                </div>
+            </div>                      
+    </section>
     <!-- End home-about Area -->
 
     <!-- Contato-->
