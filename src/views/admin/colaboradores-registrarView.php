@@ -6,7 +6,7 @@
                <form  method = "POST" action="/admin/colaboradores-registrar">
                    <div class="form-group">
                        <label for="email">Email do novo colaborador:</label>
-                       <input type="email" class="form-control" name="email">
+                       <input type="email" class="form-control" name="email" required autofocus>
                    </div>
                    <button type="submit" class="btn btn-primary">Cadastrar</button>
                </form>

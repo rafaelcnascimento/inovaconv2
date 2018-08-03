@@ -62,7 +62,13 @@
                 <li <?php if ($_SERVER['REQUEST_URI'] == '/admin/noticia-publicar'): ?> class="active" <?php endif ?>>
                     <a href="/admin/noticia-publicar">
                         <i class="pe-7s-news-paper"></i>
-                        <p>Publicar notícia</p>
+                        <p>Publicar Notícia</p>
+                    </a>
+                </li>
+                <li <?php if ($_SERVER['REQUEST_URI'] == '/admin/noticias'): ?> class="active" <?php endif ?>>
+                    <a href="/admin/noticias">
+                        <i class="pe-7s-speaker"></i>
+                        <p>Notícias Publicadas</p>
                     </a>
                 </li>
             </ul>

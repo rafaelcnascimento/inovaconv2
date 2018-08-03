@@ -5,9 +5,6 @@ $usuario = $_SESSION['usuario'];
 
 Usuario::controle(1);
 
-// $stmt = $conn->query("SELECT * FROM noticias ORDER BY id DESC LIMIT 1");
-// $news = $stmt->fetch();
-
 if (isset($_POST['corpo'])) 
 {
     $titulo = $_POST['titulo'];

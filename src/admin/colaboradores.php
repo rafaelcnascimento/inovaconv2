@@ -9,14 +9,14 @@ $usuario = $_SESSION['usuario'];
 $conn = Db::conectar();
 
 if (isset($_POST['delete']))
- {
+{
     $id = $_POST['delete'];
 
     $mensagem = Usuario::deletarColab($id);
 }
 
 if (isset($_POST['promover']))
- {
+{
     $id = $_POST['promover'];
 
     $mensagem = Usuario::promoverColab($id);
