@@ -77,25 +77,20 @@
             <div class="row justify-content-center">
                 <div class="whatever">
                     <div class="row justify-content-between lista">
+                        <!-- Impares ficam a esquerda e pares a direita -->
                         <div class="col-auto">
-                            <li>Criação de identidade visual</li>
-                            <li>Logomarca</li>
-                            <li>Cartões de visita</li>
-                            <li>Auxílio na utilização de mídias digitais</li>
-                            <li>Fortalecimento organizacional</li>
-                            <li>Pesquisa de mercado</li>
-                            <li>Pesquisa de satisfação de clientes</li>
-                            <li>Prospecção de novos consumidores</li>
+                            <?php foreach ($servicos as $servico): ?>
+                                <?php if ($servico->id % 2 <> 0): ?>
+                                    <li><?=$servico->texto?></li>
+                                <?php endif ?>
+                            <?php endforeach ?>
                         </div>
                         <div class="col-auto">
-                            <li>Melhoramento de layout interno</li>
-                            <li>Análise mercado</li>
-                            <li>Treinamento de pessoal</li>
-                            <li>Engajamento de equipes</li>
-                            <li>Formação de preço de venda</li>
-                            <li>Análise de custos empresariais</li>
-                            <li>Controle financeiro</li>
-                            <li>Fluxo de caixa</li>
+                            <?php foreach ($servicos as $servico): ?>
+                                <?php if ($servico->id % 2 == 0): ?>
+                                    <li><?=$servico->texto?></li>
+                                <?php endif ?>
+                            <?php endforeach ?>
                         </div>
                 </div>
             </div>   

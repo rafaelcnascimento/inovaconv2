@@ -56,15 +56,14 @@ class Noticia
         return $noticia;
     }
 
-    public static function editar($id,$titulo,$corpo,$url_capa)
+    public static function editarTexto($id,$titulo,$corpo)
     {
         $conn = Db::conectar();
 
-        $stmt = $conn->prepare("UPDATE noticias SET titulo = :titulo, corpo = :corpo, capa = :capa WHERE id = :id");
+        $stmt = $conn->prepare("UPDATE noticias SET titulo = :titulo, corpo = :corpo WHERE id = :id");
 
         $stmt->bindParam(':titulo', $titulo);
         $stmt->bindParam(':corpo', $corpo);
-        $stmt->bindParam(':capa', $url_capa);
         $stmt->bindParam(':id', $id);
 
         $stmt->execute();
@@ -99,3 +98,4 @@ class Noticia
         return $mensagem;
     }
 }
+// $stmt->bindParam(':capa', $url_capa);
